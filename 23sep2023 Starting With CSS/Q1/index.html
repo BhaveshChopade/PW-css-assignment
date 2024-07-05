@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Internal styles -->
+    <style>
+      .internal {
+        color: rgb(14, 236, 14);
+      }
+    </style>
+    <!-- external sheet follows -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div style="color: red">Inline css</div>
+    <div class="internal">Internal css</div>
+    <div class="external">External css</div>
+    <div style="color: red" class="internal">Inline vs Internal</div>
+    <div class="external internal">Internal vs External</div>
+    <div style="color: red" class="external">Inline vs external</div>
+  </body>
+</html>
+<!--  from above experimentation i found out priority is as inline>external>internal  -->
